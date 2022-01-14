@@ -5,7 +5,8 @@
 Antônio Pinheiro<br>
 
 
-<h5>Obs.: O script Install Packages permite a instalação automatizada de pacotes no formato DEB, Snap e Flatpak, também é possível instalar o suporte a Wine e os navegadores Chrome ou Brave Browser.</h5>
+<h5>Obs.: O script Install Packages permite a instalação automatizada de pacotes no formato DEB, Snap e Flatpak, também é possível instalar o suporte a Wine e os navegadores Chrome ou Brave Browser.
+O script também é capaz de habilitar o suporte a impressoras Epson, adicionar usuários ao arquivo SUDOERS para suporte ao comando sudo e habilitar o suporte para algoritmos genéticos em python</h5>
 
 <h5>DEPENDÊNCIAS DO PROJETO</h5>
 
