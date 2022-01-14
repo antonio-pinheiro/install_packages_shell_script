@@ -1,0 +1,6 @@
+libvulkan1
+mesa-vulkan-drivers
+libdrm-amdgpu1
+xserver-xorg-video-amdgpu
+vulkan-tools
+vulkan-validationlayers

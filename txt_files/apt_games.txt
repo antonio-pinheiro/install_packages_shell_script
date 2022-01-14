@@ -1,0 +1,8 @@
+chromium-bsu
+supertuxkart supertux frogatto gbrainy neverball
+pingus
+prboom-plus
+stellarium
+steam
+playonlinux
+dosbox

@@ -1,0 +1,7 @@
+code
+postman
+pycharm-community
+mailspring
+video-downloader
+atom
+p7zip-desktop

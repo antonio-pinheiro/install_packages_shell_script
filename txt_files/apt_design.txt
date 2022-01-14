@@ -1,0 +1,8 @@
+gimp
+okular
+ristretto
+skanlite
+xsane
+krita
+imagemagick
+kdenlive
