@@ -1,31 +1,31 @@
 #!/bin/bash
 
 ############################################################################## 
-##																			## 
-##			              Install Packages    			      	.~.			##
-##					Created by:	Antônio Pinheiro 				/V\			##
-##															   // \\		##
-##															  /(   )\		##
-##															   ^`~'^        ##
-##																TUX		   	##
-##				                         									##
-##	   OS Compatibility: Debian 11, Ubuntu 20.04 and Linux Mint 20.x        ##	
-##                      													##
+##									    ## 
+##			       Install Packages    	     .~.	    ##
+##			Created by:  Antônio Pinheiro        /V\            ##
+##							    // \\	    ##
+##							   /(   )\          ##
+##							    ^`~'^           ##
+##							     TUX	    ##
+##				                         		    ##
+##	 OS Compatibility: Debian 11, Ubuntu 20.04 and Linux Mint 20.x      ##	
+##                      						    ##
 ##############################################################################
-##	Project:		Install Packages										##
-##															     			##
-##	File name:		install_packages.sh 									##
-##																			##
-##	Description:	Install Deb, Snap and Flatpak applications              ##
-##	                                                                        ##
-##  Date:           15/12/2021												##             
-##  																		##
-## 																			##
+##  Project:	Install Packages					    ##
+##									    ##
+##  File name:  install_packages.sh 					    ##
+##									    ##
+##  Description:  Install Deb, Snap and Flatpak applications                ##
+##	                                                                    ##
+##  Date: 15/12/2021							    ##             
+##  									    ##
+## 									    ##
 ##############################################################################
-##						  !!!INSTRUCTIONS!!!								##
+##			  !!!INSTRUCTIONS!!!				    ##
 ##                      First install option 1                              ##
-##			    (APT - General and Essential Packages)                		##
-## 		                                                        		    ##
+##	        (APT - General and Essential Packages)                	    ##
+## 		                                                            ##
 ##############################################################################
 
 # Load absolute path to script, dirname parameter strips the script name from the end of the path 
