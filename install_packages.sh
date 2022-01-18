@@ -179,13 +179,13 @@ browser_install(){
     echo "Which browser do you want to install [1 - Chrome | 2 - Brave | 3 - Back to Menu]: "
     read choice
 
-    if [[ choice == "1" ]]; then
+    if [[ $choice == "1" ]]; then
         wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
         sudo dpkg -i google-chrome-stable_current_amd64.deb
         sudo rm google-chrome-stable_current_amd64.deb
         start_function
 
-    elif [[ choice == "2" ]]; then
+    elif [[ $choice == "2" ]]; then
         sudo apt install apt-transport-https curl
         sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
         echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
@@ -193,7 +193,7 @@ browser_install(){
         sudo apt install brave-browser
         start_function
 
-    elif [[ choice == "3" ]]; then
+    elif [[ $choice == "3" ]]; then
         start_function
     
     else
