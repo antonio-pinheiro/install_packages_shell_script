@@ -92,31 +92,6 @@ enable_snap(){ #OK
     fi
 }
 
-# Install and configure Wine. Allows Linux to run Windows applications and Windows games.
-wine_packages(){ #OK
-    
-    if [[ $distro == "Debian" ]]; then
-            repo="deb https://dl.winehq.org/wine-builds/debian/ bullseye main >> /etc/apt/sources.list && sudo apt update"
-    
-    elif [[ $distro == "Linuxmint" ]] || [[ $distro == "Ubuntu" ]]; then
-            repo="add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main' && sudo apt update"
-    else
-        echo
-        echo "Your Operational System is not supported. This script only supports Debian 11, Linux Mint 20.x and Ubuntu 20.04"
-        exit
-    fi
-    
-    echo "This function installs Wine. "
-    sleep 1
-    sudo dpkg --add-architecture i386
-    wget -nc https://dl.winehq.org/wine-builds/winehq.key && sudo apt-key add winehq.key
-    sudo echo "$repo"
-    sudo apt install libfaudio0 && sudo apt install --install-recommends winehq-stable 
-    echo
-    echo "Wine successfully installed and configured"
-    start_function
-}
-
 # Function responsible for install flatpak applications.. 
 # Reading the file and iterating line by line to install packages.
 flatpak_packages(){
@@ -167,7 +142,7 @@ apt_packages(){ #OK
     sleep 1
     #sudo apt update
     while IFS= read -r line || [[ -n "$line" ]]; do
-        sudo apt install $line
+        sudo apt install $line -y
     done < "$apt_programs"
     echo
     echo "Deb packages installed"
